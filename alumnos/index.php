@@ -13,6 +13,7 @@ $alumnos = $pdo->query($sql)->fetchAll();
 <head>
   <meta charset="utf-8">
   <title>Alumnos</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <h2>Alumnos (READ)</h2>
@@ -51,6 +52,5 @@ $alumnos = $pdo->query($sql)->fetchAll();
     <?php endforeach; ?>
   </table>
 
-  <p><small>Nota: usamos “Desactivar” (estado INACTIVO) para no romper pagos/inscripciones.</small></p>
 </body>
 </html>

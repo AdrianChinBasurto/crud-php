@@ -9,6 +9,7 @@ $conductores = $pdo->query("SELECT * FROM conductores ORDER BY id_conductor DESC
 <head>
   <meta charset="utf-8">
   <title>Conductores</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <h2>Conductores (READ)</h2>

@@ -8,6 +8,7 @@ $responsables = $pdo->query("SELECT * FROM responsables ORDER BY id_responsable 
 <head>
   <meta charset="utf-8">
   <title>Responsables</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <h2>Responsables (READ)</h2>
@@ -45,7 +46,5 @@ $responsables = $pdo->query("SELECT * FROM responsables ORDER BY id_responsable 
       </tr>
     <?php endforeach; ?>
   </table>
-
-  <p><small>Nota: si un responsable ya tiene alumnos, no se podrá eliminar por la FK.</small></p>
 </body>
 </html>

@@ -23,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="utf-8">
   <title>Nuevo Conductor</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <h2>Nuevo Conductor</h2>

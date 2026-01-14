@@ -15,9 +15,10 @@ $rutas = $pdo->query($sql)->fetchAll();
 <head>
   <meta charset="utf-8">
   <title>Rutas</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <h2>Rutas (READ)</h2>
+  <h2>Rutas</h2>
 
   <p>
     <a href="../index.php">← Menú</a> |
@@ -53,6 +54,6 @@ $rutas = $pdo->query($sql)->fetchAll();
     <?php endforeach; ?>
   </table>
 
-  <p><small>Nota: Desactivar cambia el estado a INACTIVA (no borra) para no afectar inscripciones.</small></p>
+
 </body>
 </html>

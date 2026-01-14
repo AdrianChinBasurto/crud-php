@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
   <meta charset="utf-8">
   <title>Editar Alumno</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <h2>Editar Alumno (ID: <?= $alumno["id_alumno"] ?>)</h2>

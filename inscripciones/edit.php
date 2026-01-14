@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
   <meta charset="utf-8">
   <title>Editar Inscripción</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <h2>Editar Inscripción (ID: <?= $ins["id_inscripcion"] ?>)</h2>

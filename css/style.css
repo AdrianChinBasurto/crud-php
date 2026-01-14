@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  margin: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #eaeaea;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+form {
+  background: #fff;
+  padding: 15px;
+  max-width: 600px;
+  border: 1px solid #ccc;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 14px;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004999;
+}
+
+small {
+  color: #666;
+}
+
+/* SOLO ESTILO VISUAL PARA BOTONES */
+a, button {
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Enlaces tipo acción */
+a {
+  background: #eaeaea;
+  color: #000;
+}
+
+a:hover {
+  background: #d6d6d6;
+}
+
+/* Botón submit */
+button {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background: #004999;
+}
+
+/* Espacio y estilo básico para enlaces y botones */
+a, button {
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 6px;   /* 👈 separación horizontal */
+  margin-bottom: 4px;  /* 👈 separación vertical */
+  display: inline-block;
+}
+
+/* Enlaces como botones */
+a {
+  background: #eaeaea;
+  color: #000;
+  text-decoration: none;   /* 👈 quita subrayado */
+}
+
+a:hover {
+  background: #d6d6d6;
+  text-decoration: none;   /* 👈 asegura que no subraye */
+}
+
+/* Botón submit */
+button {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background: #004999;
+}

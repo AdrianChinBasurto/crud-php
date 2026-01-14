@@ -15,6 +15,7 @@ $inscripciones = $pdo->query($sql)->fetchAll();
 <head>
   <meta charset="utf-8">
   <title>Inscripciones</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <h2>Inscripciones (READ)</h2>
@@ -51,6 +52,5 @@ $inscripciones = $pdo->query($sql)->fetchAll();
     <?php endforeach; ?>
   </table>
 
-  <p><small>Nota: aquí el eliminar es REAL (DELETE físico).</small></p>
 </body>
 </html>
