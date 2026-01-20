@@ -1,135 +1,190 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fa;
-  margin: 20px;
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h2 {
-  margin-bottom: 10px;
+/* BODY GENERAL */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e9eef5, #f9fafc);
+  min-height: 100vh;
+  padding: 20px;
   color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: #0066cc;
+/* TITULOS */
+h2 {
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-a:hover {
-  text-decoration: underline;
+/* ===== LOGIN ===== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
 }
 
-table {
-  border-collapse: collapse;
+.login-box {
+  background: #fff;
+  padding: 25px 30px;
   width: 100%;
-  background: #fff;
-  margin-top: 10px;
+  max-width: 380px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
+.login-box h2 {
+  margin-bottom: 20px;
 }
 
-th {
-  background: #eaeaea;
-}
-
-tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
+/* ===== FORMULARIOS ===== */
 form {
-  background: #fff;
-  padding: 15px;
-  max-width: 600px;
-  border: 1px solid #ccc;
+  width: 100%;
 }
 
 label {
   font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
 }
 
 input, select {
   width: 100%;
-  padding: 6px;
-  margin-top: 4px;
-  margin-bottom: 10px;
+  padding: 8px;
+  margin-bottom: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
 }
 
+/* ===== BOTONES ===== */
 button {
-  padding: 8px 14px;
-  background: #0066cc;
+  width: 100%;
+  padding: 10px;
+  background: #0d6efd;
   color: #fff;
   border: none;
+  border-radius: 5px;
+  font-size: 15px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #004999;
+  background: #0b5ed7;
 }
 
-small {
-  color: #666;
-}
-
-/* SOLO ESTILO VISUAL PARA BOTONES */
-a, button {
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-/* Enlaces tipo acción */
+/* ===== LINKS COMO BOTONES ===== */
 a {
-  background: #eaeaea;
-  color: #000;
-}
-
-a:hover {
-  background: #d6d6d6;
-}
-
-/* Botón submit */
-button {
-  background: #0066cc;
-  color: #fff;
-  border: none;
-}
-
-button:hover {
-  background: #004999;
-}
-
-/* Espacio y estilo básico para enlaces y botones */
-a, button {
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 14px;
-  margin-right: 6px;   /* 👈 separación horizontal */
-  margin-bottom: 4px;  /* 👈 separación vertical */
   display: inline-block;
-}
-
-/* Enlaces como botones */
-a {
-  background: #eaeaea;
+  padding: 6px 12px;
+  background: #e9ecef;
   color: #000;
-  text-decoration: none;   /* 👈 quita subrayado */
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 6px;
+  margin-top: 4px;
 }
 
 a:hover {
-  background: #d6d6d6;
-  text-decoration: none;   /* 👈 asegura que no subraye */
+  background: #d6d8db;
+  text-decoration: none;
 }
 
-/* Botón submit */
-button {
-  background: #0066cc;
+/* DELETE (solo visual) */
+a[href*="delete"] {
+  background: #dc3545;
   color: #fff;
-  border: none;
 }
 
-button:hover {
-  background: #004999;
+a[href*="delete"]:hover {
+  background: #bb2d3b;
+}
+
+/* ===== TABLAS ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+}
+
+th {
+  background: #f1f3f5;
+}
+
+tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+/* ===== MENSAJES ===== */
+.error {
+  color: #dc3545;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+}
+
+
+/* ===== TOP BAR ===== */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px 15px;
+  border: 1px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+.top-bar .logout {
+  background: #dc3545;
+  color: #fff;
+}
+
+.top-bar .logout:hover {
+  background: #bb2d3b;
+}
+
+/* ===== MENU ===== */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+}
+
+.menu-container a {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+  color: #0d6efd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.menu-container a:hover {
+  background: #f1f3f5;
+  color: #0a58ca;
+}
+
+/* ===== FOOTER / LEYENDA ===== */
+.legend {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
 }

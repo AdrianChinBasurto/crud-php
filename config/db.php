@@ -1,19 +1,18 @@
 <?php
-$host = "localhost";
-$db   = "transporte_escolar";
-$user = "root";      // o trans_app si lo creaste
-$pass = "";          // en XAMPP suele ser vacío, o tu clave
-$charset = "utf8mb4";
+require_once __DIR__ . "/auth.php";
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-
-try {
-  $pdo = new PDO($dsn, $user, $pass, [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-  ]);
-} catch (PDOException $e) {
-  die("Error de conexión: " . $e->getMessage());
+if (!isset($_SESSION['db_user'], $_SESSION['db_pass'])) {
+  header("Location: auth/login.php");
+  exit;
 }
 
-
+try {
+  $pdo = new PDO(
+    "mysql:host=localhost;dbname=transporte_escolar;charset=utf8",
+    $_SESSION['db_user'],
+    $_SESSION['db_pass'],
+    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+  );
+} catch (PDOException $e) {
+  die("Error de conexión.");
+}
